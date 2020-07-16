@@ -1,0 +1,16 @@
+<h1>Upload your own Trivia</h1>
+<%= form_with scope: :question, url: questions_path,  local: true do |form| %>
+  <p class="question">
+    <%= form.label :question %><br>
+    <%= form.text_field :question %>
+  </p>
+ 
+  <p class="answer">
+    <%= form.label :answer %><br>
+    <%= form.text_field :answer %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

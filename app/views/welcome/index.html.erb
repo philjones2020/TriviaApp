@@ -1,0 +1,21 @@
+<div class="header">
+	<h1>Trivial Trivia</h1>
+	<!--<img src="images/TrivaPic.jpg">-->
+	<h2>A fun trivia website</h2>
+</div>
+
+<ul>
+	<li><%= link_to 'Home', controller: 'welcome' %></li>
+	<li><%= link_to 'Create Questions', action: 'new', controller: 'questions' %></li>
+	<li></li>
+</ul>
+
+<div class="category-grid">
+	<h1> Select from a category</h1>
+	<div class="row">
+		<div class="column">Sports</div>
+		<div class="column">Music</div>
+		<div class="column">Entertainment</div>
+		<div class="column">Science</div>
+	</div>
+</div>
