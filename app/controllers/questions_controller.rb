@@ -1,6 +1,10 @@
 class QuestionsController < ApplicationController
 	def show
-		@question = Question.find(params[:id])
+		begin
+			@question = Question.find(params[:id])
+		rescue ActiveRecord::RecordNotFound
+			redirect_to questions_path
+		end
 	end
 
 	def index
@@ -28,6 +32,6 @@ class QuestionsController < ApplicationController
 
 	private
 		def question_params
-			params.require(:question).permit(:question, :answer)
+			params.require(:question).permit(:question, :answer, :category)
 		end
 end

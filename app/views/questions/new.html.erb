@@ -1,16 +1,23 @@
-<h1>Upload your own Trivia</h1>
-<%= form_with scope: :question, url: questions_path,  local: true do |form| %>
-  <p class="question">
-    <%= form.label :question %><br>
-    <%= form.text_field :question %>
-  </p>
- 
-  <p class="answer">
-    <%= form.label :answer %><br>
-    <%= form.text_field :answer %>
-  </p>
- 
-  <p>
-    <%= form.submit %>
-  </p>
-<% end %>
+<body  class="questions">
+  <h1 class="question_header">Upload your own trivia questions</h1>
+  <%= form_with scope: :question, url: questions_path,  local: true do |form| %>
+    <p class="question">
+      <%= form.label :question %><br>
+      <%= form.text_field :question %>
+    </p>
+   
+    <p class="answer">
+      <%= form.label :answer %><br>
+      <%= form.text_field :answer %>
+    </p>
+
+    <p class="category">
+      <%= form.label :category %><br>
+      <%= form.select(:category, options_for_select([['Sports','Sports'],['Entertainment','Entertainment'],['Music','Music'],['Science','Science']])) %>
+    </p>
+   
+    <p class="submit">
+      <%= form.submit %>
+    </p>
+  <% end %>
+</body>
