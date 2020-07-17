@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
   get 'welcome/index'
+
+  get 'quiz/sports'
+  get 'quiz/music'
+  get 'quiz/entertainment'
+  get 'quiz/science'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   resources :questions
 

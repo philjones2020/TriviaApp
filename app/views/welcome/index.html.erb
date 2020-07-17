@@ -13,9 +13,9 @@
 <div class="category-grid">
 	<h1> Select from a category</h1>
 	<div class="row">
-		<div class="column">Sports</div>
-		<div class="column">Music</div>
-		<div class="column">Entertainment</div>
-		<div class="column">Science</div>
+		<div class="column"><%= link_to 'Sports', action: 'sports', controller: 'quiz' %></div>
+		<div class="column"><%= link_to 'Music', action: 'music', controller: 'quiz' %></div>
+		<div class="column"><%= link_to 'Entertainment', action: 'entertainment', controller: 'quiz' %></div>
+		<div class="column"><%= link_to 'Science', action: 'science', controller: 'quiz' %></div>
 	</div>
 </div>
