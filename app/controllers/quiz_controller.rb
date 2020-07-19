@@ -1,17 +1,17 @@
 class QuizController < ApplicationController
 	def sports
-		@questions = Question.where(category: "Sports")
+		@question = Question.where(category: "Sports").order(Arel.sql('RANDOM()')).first
 	end
 
 	def music
-		@questions = Question.where(category: "Music")
+		@question = Question.where(category: "Music").order(Arel.sql('RANDOM()')).first
 	end
 
 	def entertainment
-		@questions = Question.where(category: "Entertainment")
+		@question = Question.where(category: "Entertainment").order(Arel.sql('RANDOM()')).first
 	end
 
 	def science
-		@questions = Question.where(category: "Science")
+		@question = Question.where(category: "Science").order(Arel.sql('RANDOM()')).first
 	end
 end
