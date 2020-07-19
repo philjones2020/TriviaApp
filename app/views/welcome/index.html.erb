@@ -16,11 +16,16 @@
 </ul>
 
 <div class="category-grid">
-	<h1> Select from a category</h1>
-	<div class="row">
-		<div class="column"><%= link_to 'Sports', action: 'sports', controller: 'quiz' %></div>
-		<div class="column"><%= link_to 'Music', action: 'music', controller: 'quiz' %></div>
-		<div class="column"><%= link_to 'Entertainment', action: 'entertainment', controller: 'quiz' %></div>
-		<div class="column"><%= link_to 'Science', action: 'science', controller: 'quiz' %></div>
-	</div>
+	<%= link_to action: "sports", controller: 'quiz', :class=>"grid-element" do %>
+		<%= image_tag 'sports.png', :class=>"grid-element" %>
+	<% end %>
+	<%= link_to action: "music", controller: 'quiz', :class=>"grid-element" do %>
+		<%= image_tag('music.png') %>
+	<% end %>
+	<%= link_to action: "entertainment", controller: 'quiz', :class=>"grid-element" do %>
+		<%= image_tag('entertainment.png') %>
+	<% end %>
+	<%= link_to action: "science", controller: 'quiz', :class=>"grid-element" do %>
+		<%= image_tag('science.jpg') %>
+	<% end %>
 </div>
