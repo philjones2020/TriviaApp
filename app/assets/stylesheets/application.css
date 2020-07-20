@@ -68,9 +68,8 @@ li a.active {
 
 .grid-element {
 	object-fit: cover;
-	width: 100%;
-	height: auto;
-	border: 1px solid black;
+	width: auto;
+	height: 100%;
 }
 
 .column {
