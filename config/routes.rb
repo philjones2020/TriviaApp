@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
   get 'welcome/index'
   get 'welcome/leaderboards'
+  post 'quiz/answered', to: 'quiz#answered'
+  get 'welcome/profile'
 
   get 'quiz/sports'
   get 'quiz/music'
