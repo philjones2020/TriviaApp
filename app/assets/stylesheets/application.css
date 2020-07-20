@@ -58,6 +58,21 @@ li a:hover {
 li a.active {
 	background-color: #003399;
 }
+.profile-header {
+	padding: 40px;
+	text-align: center;
+	background: #6699FF;
+	font-size: 30px;
+	color: white;
+}
+
+.profile-p {
+	padding: 40px;
+	text-align: center;
+	background: #6699FF;
+	color: white;
+	font-size: 20px;
+}
 
 .category-grid {
 	display: grid;
@@ -68,7 +83,7 @@ li a.active {
 
 .grid-element {
 	object-fit: cover;
-	width: auto;
+	max-width: 100%;
 	height: 100%;
 }
 
