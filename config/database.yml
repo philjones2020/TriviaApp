@@ -79,7 +79,4 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: d21lamrc0c3j1h
-  username: evvxlqrgnvfvhz
-  password: 897cc5d60b43191b108b795875518daf33a3b9949b5e755dd039a735ba2a795f
+  url: <%= ENV['DATABASE_URL'] %>
